@@ -12,6 +12,7 @@ def is_safe_ascending(level) -> bool:
 
     return True
 
+
 def is_safe_descending(level) -> bool:
     lower_limit = 1
     upper_limit = 3
@@ -25,6 +26,7 @@ def is_safe_descending(level) -> bool:
             return False
 
     return True
+
 
 def part_1():
     count = 0
@@ -54,9 +56,9 @@ def part_2():
         if is_safe_ascending(level) or is_safe_descending(level):
             count += 1
             continue
-        
+
         for i in range(len(level)):
-            temp_level = level[:i] + level[i+1:]
+            temp_level = level[:i] + level[i + 1 :]
             if is_safe_ascending(temp_level) or is_safe_descending(temp_level):
                 count += 1
                 break

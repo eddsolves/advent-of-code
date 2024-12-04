@@ -32,7 +32,7 @@ def part_1():
     count = 0
     levels = []
 
-    with open("./2024/day_02.txt", "r") as f:
+    with open("./2024/data/day_02.txt", "r") as f:
         for line in f:
             levels.append(list(map(int, line.strip().split(" "))))
 
@@ -48,7 +48,7 @@ def part_2():
     count = 0
     levels = []
 
-    with open("./2024/day_02.txt", "r") as f:
+    with open("./2024/data/day_02.txt", "r") as f:
         for line in f:
             levels.append(list(map(int, line.strip().split(" "))))
 

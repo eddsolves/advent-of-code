@@ -2,7 +2,7 @@ def part_1():
     input = ""
     total = 0
 
-    with open("2024/day_03.txt", "r") as f:
+    with open("2024/data/day_03.txt", "r") as f:
         for line in f:
             input += line.strip()
 
@@ -49,7 +49,7 @@ def part_2():
     total = 0
     do = True
 
-    with open("2024/day_03.txt", "r") as f:
+    with open("2024/data/day_03.txt", "r") as f:
         for line in f:
             input += line.strip()
 

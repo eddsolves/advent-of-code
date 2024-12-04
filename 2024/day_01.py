@@ -3,7 +3,7 @@ def part_1():
     left_side = []
     right_side = []
 
-    with open("./2024/day_01.txt", "r") as f:
+    with open("./2024/data/day_01.txt", "r") as f:
         for line in f:
             ls, rs = map(int, line.split())
             left_side.append(ls)
@@ -23,7 +23,7 @@ def part_2():
     left_side = []
     right_side = []
 
-    with open("./2024/day_01.txt", "r") as f:
+    with open("./2024/data/day_01.txt", "r") as f:
         for line in f:
             ls, rs = map(int, line.split())
             left_side.append(ls)

@@ -221,5 +221,5 @@ def part_2(word_search):
 
 
 if __name__ == "__main__":
-    # print(part_1(word_search))
+    print(part_1(word_search))
     print(part_2(word_search))

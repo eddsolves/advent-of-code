@@ -148,6 +148,9 @@ def part_1(word_search):
 def check_for_mas(word_search, x, y) -> bool:
     if any([x - 1 < 0, x + 1 > X_LIMIT, y - 1 < 0, y + 1 > Y_LIMIT]):
         return False
+    
+    if word_search[y][x] != "A":
+        return False
 
     #            X
     #        -1  0 +1
@@ -213,13 +216,11 @@ def part_2(word_search):
 
     for y in range(len(word_search)):
         for x in range(len(word_search)):
-            if word_search[y][x] == "A":
-                if check_for_mas(word_search, x, y):
-                    count += 1
+            if check_for_mas(word_search, x, y):
+                count += 1
 
     return count
 
 
-if __name__ == "__main__":
-    print(part_1(word_search))
-    print(part_2(word_search))
+print(part_1(word_search))
+print(part_2(word_search))

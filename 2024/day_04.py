@@ -148,7 +148,7 @@ def part_1(word_search):
 def check_for_mas(word_search, x, y) -> bool:
     if any([x - 1 < 0, x + 1 > X_LIMIT, y - 1 < 0, y + 1 > Y_LIMIT]):
         return False
-    
+
     if word_search[y][x] != "A":
         return False
 

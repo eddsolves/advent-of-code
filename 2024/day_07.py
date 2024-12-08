@@ -13,7 +13,7 @@ def solve():
             allvalues.append(list(map(int, values.strip().split(" "))))
 
     for target, values in zip(targets, allvalues):
-        all_operations = product(['sum', 'mult', 'concat'], repeat=len(values) - 1)
+        all_operations = product(["sum", "mult", "concat"], repeat=len(values) - 1)
         for operations in all_operations:
             running_total = values[0]
             found_concat = False
@@ -24,9 +24,8 @@ def solve():
                     case "mult":
                         running_total *= values[i + 1]
                     case "concat":
-                        running_total = int(str(running_total) + str(values[i+1]))
+                        running_total = int(str(running_total) + str(values[i + 1]))
 
-                        
             if running_total == target and not found_concat:
                 total += target
                 break
